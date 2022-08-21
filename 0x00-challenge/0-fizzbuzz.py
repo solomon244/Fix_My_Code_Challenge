@@ -7,6 +7,7 @@ import sys
 def fizzbuzz(n):
     """
     FizzBuzz function prints numbers from 1 to n separated by a space.
+
     - For multiples of three print "Fizz" instead of the number and for
       multiples of five print "Buzz".
     - For numbers which are multiples of both three and five print "FizzBuzz".
@@ -33,11 +34,6 @@ if __name__ == '__main__':
         print("Usage: ./0-fizzbuzz.py <number>")
         print("Example: ./0-fizzbuzz.py 89")
         sys.exit(1)
-    try:
-        number = int(sys.argv[1])
-        fizzbuzz(number)
-    except ValueError:
-        print("Input is not a number")
-        print("Usage: ./0-fizzbuzz.py <number>")
-        print("Example: ./0-fizzbuzz.py 89")
-        sys.exit(1)
+
+    number = int(sys.argv[1])
+    fizzbuzz(number)
